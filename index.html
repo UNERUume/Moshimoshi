@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moshimoshi</title>
+    <title>랜덤 문구</title>
     <style>
         body {
             text-align: center;
@@ -13,19 +13,23 @@
     </style>
 </head>
 <body>
-    <p id="message">당신의 손패의 수듄ㅋㅋ</p>
+    <p id="message">당신의 손패를 응원해~</p>
     <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
     <script>
         function showRandomMessage() {
             const messages = [
-		    "와 정말 강한 패",
-		    "와 정말 약한 패",
-		    "초동 빼고 다있음",
-		    "패트랩을 못잡은ㅋㅋㅋ",
-		    "와 선공에 후공패ㅋㅋㅋ",
-		    "와 후공에 선공패ㅋㅋㅋ",
-		    "그냥 서렌해라.",
-		    "왜 지혼자 포커하냐?"
+                "와 정말 강한 패",
+                "이런, 조금 약한패",
+                "어...그냥 나가자.",
+                "당신은 호감카드의 사랑을 받고있어요.",
+                "초동을 5장 잡으심.",
+                "패트랩만 잡으심.",
+                "후공인데 선공패.",
+                "선공인데 후공패",
+                "혼자서 포커하는중. 님 트리플임.",
+                "어떻게 전개는 가능",
+                "당신 패 3장이 놀고있어요!",
             ];
             document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
         }
